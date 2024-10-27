@@ -1,4 +1,4 @@
-public class Exp_1_FibonacciSeries {
+public class DAA_1_FibonacciSeries {
     public static int recursive(int n) {
         if (n<=1) {return n;}
         return recursive(n-1)+recursive(n-2);
