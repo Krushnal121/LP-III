@@ -16,7 +16,7 @@ class DAA_3_FractionalKnapsack {
 
 
     public static double profitMaximizer(PriorityQueue<WeightNode> pq, int capacity) {
-        int profit = 0;
+        double profit = 0;
         while (!pq.isEmpty() && capacity > 0) {
             WeightNode w = pq.poll();
             if (capacity > w.weight) {
@@ -24,8 +24,7 @@ class DAA_3_FractionalKnapsack {
                 profit += w.profit;
             }
             else {
-                int num=(w.profit*capacity)/w.weight;
-                profit += w.profit*(capacity/w.weight);
+                profit += w.profit*((double) capacity /w.weight);
             }
         }
         return profit;
