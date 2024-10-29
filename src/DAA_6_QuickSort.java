@@ -77,3 +77,11 @@ public class DAA_6_QuickSort {
         System.out.println("Time taken by Randomized QuickSort: " + (endTime - startTime) / 1e6 + " ms");
     }
 }
+/*
+### Summary Table
+
+| Algorithm              | Best Time Complexity | Average Time Complexity | Worst Time Complexity | Space Complexity (Average) | Space Complexity (Worst) |
+        |------------------------|----------------------|-------------------------|-----------------------|----------------------------|--------------------------|
+        | Deterministic QuickSort | \(O(n \log n)\)      | \(O(n \log n)\)         | \(O(n^2)\)            | \(O(\log n)\)              | \(O(n)\)                 |
+        | Randomized QuickSort    | \(O(n \log n)\)      | \(O(n \log n)\)         | \(O(n^2)\)            | \(O(\log n)\)              | \(O(n)\)                 |
+*/
