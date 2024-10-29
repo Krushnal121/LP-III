@@ -173,3 +173,7 @@ plt.subplot(1, 2, 2)
 sns.barplot(x='Model', y='RMSE', data=metrics, palette='viridis')
 plt.title("RMSE Comparison")
 plt.show()
+
+solution= df.copy()
+solution["LinerPred"]=linear_model.predict(df.drop('fare_amount', axis=1))
+solution["RandomForestPred"]=random_forest_model.predict(df.drop('fare_amount', axis=1))
