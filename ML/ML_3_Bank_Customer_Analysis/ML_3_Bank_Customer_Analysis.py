@@ -11,7 +11,7 @@ from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.callbacks import EarlyStopping
 
 # Step 1: Load the dataset
-data = pd.read_csv('/path_to_data/Churn_Modelling.csv')
+data = pd.read_csv('./Churn_Modelling.csv')
 print("Dataset Shape:", data.shape)
 data.head()
 
