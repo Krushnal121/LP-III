@@ -6,7 +6,7 @@ import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
-from tensorflow.keras.models import Sequential
+from tensorflow.keras.models import Sequential()
 from tensorflow.keras.layers import Dense, Dropout
 from tensorflow.keras.callbacks import EarlyStopping
 
